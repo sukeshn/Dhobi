@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X5B-mr-zGk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Clothes Bundle View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ClothesBundleViewController" customModule="Dhobi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gHN-pJ-P1u">
+                                <rect key="frame" x="16" y="72" width="343" height="587"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="top" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="suL-fl-zz0">
+                                        <rect key="frame" x="11.5" y="0.0" width="320" height="212"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="502510563.27046198">
+                                            <!--2016-12-04 02:16:03 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="DateGivenDateSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="SuB-cf-mqs"/>
+                                        </connections>
+                                    </datePicker>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bMf-bN-8XD">
+                                        <rect key="frame" x="20.5" y="222" width="302" height="316"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gff-wO-Kg5">
+                                                <rect key="frame" x="0.0" y="0.0" width="302" height="71.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sjM-BY-A23">
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="n5X-Rb-g66">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="c75-yq-dvU">
+                                                                <rect key="frame" x="0.0" y="42.5" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="KaneeshaTopClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="Tss-of-Aow"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RVp-18-FV5">
+                                                        <rect key="frame" x="104" y="0.0" width="94" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="T3U-Jl-1rY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7JU-9m-fuY">
+                                                                <rect key="frame" x="0.0" y="42.5" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="KaneeshaBottomStepperClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="mlf-18-lih"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ujy-cX-5pL">
+                                                        <rect key="frame" x="208" y="0.0" width="94" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Ww-qe-5Up">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="i5f-31-VWt">
+                                                                <rect key="frame" x="0.0" y="42.5" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="KaneeshaFrockStepperClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="3fW-NZ-4bt"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WMX-Sg-GSX">
+                                                <rect key="frame" x="0.0" y="81.5" width="302" height="71.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oEt-kk-k67">
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xlF-VT-S8z">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Q8M-bu-znf">
+                                                                <rect key="frame" x="0.0" y="42.5" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="KaneeshaUniformStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="QpJ-Cp-SVP"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jDx-LM-WAi">
+                                                        <rect key="frame" x="104" y="0.0" width="94" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kYa-Yc-ROr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="J6c-Th-7dW">
+                                                                <rect key="frame" x="0.0" y="42.5" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="NehalShirtStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="nNt-Y1-k0Z"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g4V-JJ-ptP">
+                                                        <rect key="frame" x="208" y="0.0" width="94" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PlV-5m-ahn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="q5K-Vx-l8M">
+                                                                <rect key="frame" x="0.0" y="42.5" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="NehalPantStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="L0o-Qu-J2S"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bOd-yD-3qu">
+                                                <rect key="frame" x="0.0" y="163" width="302" height="71.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lVd-NA-JAB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="sms-0u-JUJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Ki2-wF-cP5">
+                                                                <rect key="frame" x="0.0" y="42.5" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="SukeshPantStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="dOW-a8-Bgr"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1vW-Hq-o6A">
+                                                        <rect key="frame" x="104" y="0.0" width="94" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="g4p-8Q-9KJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="b2l-Cy-FIc">
+                                                                <rect key="frame" x="0.0" y="42.5" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="SukeshShirtStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="LXk-AC-Gm9"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bD9-jf-m6b">
+                                                        <rect key="frame" x="208" y="0.0" width="94" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="97o-Yi-s5f">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="kQ1-Vn-oBp">
+                                                                <rect key="frame" x="0.0" y="42.5" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="PunjanbiStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZDP-oD-s6b"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FOB-Fv-mrN">
+                                                <rect key="frame" x="0.0" y="244.5" width="302" height="71.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ozr-h8-lMH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7rN-Ag-8AX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="rSH-Cy-gbd">
+                                                                <rect key="frame" x="0.0" y="42.5" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="SareeStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="eu7-pk-gk5"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oT3-QB-m8z">
+                                                        <rect key="frame" x="104" y="0.0" width="94" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0J9-lk-eLR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="T7z-Rm-VKw">
+                                                                <rect key="frame" x="0.0" y="42.5" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="BlouseStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Z7-us-sru"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Btk-Rn-OQv">
+                                                        <rect key="frame" x="208" y="0.0" width="94" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="o4v-E8-6YP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="JsR-Tf-fjU">
+                                                                <rect key="frame" x="0.0" y="42.5" width="94" height="29"/>
+                                                                <connections>
+                                                                    <action selector="OtherStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="jd3-pD-l4U"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n84-rP-NOO">
+                                        <rect key="frame" x="0.0" y="548" width="343" height="39"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w83-I9-E86">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="39"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <state key="normal" title="Give"/>
+                                                <connections>
+                                                    <action selector="GiveClothesBundle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIk-Pe-noH"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="5kx-YK-xvR">
+                                                <rect key="frame" x="114.5" y="3" width="114" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-8i-cQn">
+                                                <rect key="frame" x="228.5" y="0.0" width="114.5" height="39"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <state key="normal" title="Receive"/>
+                                                <connections>
+                                                    <action selector="ReceiveClothesBundle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NYh-Kw-Oh1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="n84-rP-NOO" secondAttribute="trailing" id="40N-DL-qU9"/>
+                                    <constraint firstItem="n84-rP-NOO" firstAttribute="leading" secondItem="gHN-pJ-P1u" secondAttribute="leading" id="maa-fV-6vq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gHN-pJ-P1u" secondAttribute="bottom" constant="8" symbolic="YES" id="gTd-03-50c"/>
+                            <constraint firstItem="gHN-pJ-P1u" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="mJg-LW-EfZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gHN-pJ-P1u" secondAttribute="trailing" id="nE7-5C-chr"/>
+                            <constraint firstItem="gHN-pJ-P1u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="w8p-oB-HQi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="R6Y-hj-UXD"/>
+                    <connections>
+                        <outlet property="BlouseStepper" destination="T7z-Rm-VKw" id="l65-93-JdE"/>
+                        <outlet property="BlousesCounter" destination="0J9-lk-eLR" id="MeY-mh-W0O"/>
+                        <outlet property="DateGivenDisplay" destination="suL-fl-zz0" id="apw-Xq-aQQ"/>
+                        <outlet property="KaneeshaBottomStepper" destination="7JU-9m-fuY" id="s8J-kL-CRO"/>
+                        <outlet property="KaneeshaBottomsCounter" destination="T3U-Jl-1rY" id="ajh-bO-Reb"/>
+                        <outlet property="KaneeshaFrockStepper" destination="i5f-31-VWt" id="P9A-AH-5Kh"/>
+                        <outlet property="KaneeshaFrocksCounter" destination="8Ww-qe-5Up" id="Kq6-dS-qnJ"/>
+                        <outlet property="KaneeshaTopStepper" destination="c75-yq-dvU" id="ryN-pS-exD"/>
+                        <outlet property="KaneeshaTopsCounter" destination="n5X-Rb-g66" id="cqe-4g-3NN"/>
+                        <outlet property="KaneeshaUniformStepper" destination="Q8M-bu-znf" id="Vy6-8j-taX"/>
+                        <outlet property="KaneeshaUniformsCounter" destination="xlF-VT-S8z" id="Nbr-gF-Wpl"/>
+                        <outlet property="NehalPantStepper" destination="q5K-Vx-l8M" id="32c-0g-Wd7"/>
+                        <outlet property="NehalPantsCounter" destination="PlV-5m-ahn" id="xrJ-0u-4os"/>
+                        <outlet property="NehalShirtStepper" destination="J6c-Th-7dW" id="0cm-6W-Cs8"/>
+                        <outlet property="NehalShirtsCounter" destination="kYa-Yc-ROr" id="qfV-0v-ILV"/>
+                        <outlet property="OtherStepper" destination="JsR-Tf-fjU" id="b5T-bF-pA5"/>
+                        <outlet property="OthersCounter" destination="o4v-E8-6YP" id="JZr-Sy-kRn"/>
+                        <outlet property="PunjabiStepper" destination="kQ1-Vn-oBp" id="wGv-Si-Rta"/>
+                        <outlet property="PunjabisCounter" destination="97o-Yi-s5f" id="mrp-Fa-eDp"/>
+                        <outlet property="SareeStepper" destination="rSH-Cy-gbd" id="y1D-CO-deA"/>
+                        <outlet property="SareesCounter" destination="7rN-Ag-8AX" id="SlG-9H-z82"/>
+                        <outlet property="SukeshPantStepper" destination="Ki2-wF-cP5" id="oAn-S0-OSW"/>
+                        <outlet property="SukeshPantsCounter" destination="sms-0u-JUJ" id="yUl-k3-MYG"/>
+                        <outlet property="SukeshShirtStepper" destination="b2l-Cy-FIc" id="Uwm-UZ-hDf"/>
+                        <outlet property="SukeshShirtsCounter" destination="g4p-8Q-9KJ" id="eVZ-o2-BQ9"/>
+                        <outlet property="TotalCounter" destination="5kx-YK-xvR" id="kmZ-lk-PgQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534" y="-43"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="loa-5k-Skb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X5B-mr-zGk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wwO-iw-Lse">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CKg-1E-54x" kind="relationship" relationship="rootViewController" id="fdm-oe-qa0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kPI-zm-r96" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-169" y="-42"/>
+        </scene>
+        <!--Clothes Given-->
+        <scene sceneID="Q1c-Vd-NaV">
+            <objects>
+                <tableViewController id="CKg-1E-54x" customClass="ClothesBundleTableViewController" customModule="Dhobi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PG4-6Z-ymK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClothesBundleTableViewCell" id="yEP-Uj-9ty" customClass="ClothesBundleTableViewCell" customModule="Dhobi" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yEP-Uj-9ty" id="cN4-39-kTy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3x8-aY-q0j" userLabel="Total Clothes Label">
+                                            <rect key="frame" x="166" y="11" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="✓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klf-dE-4C3">
+                                            <rect key="frame" x="325" y="12" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyV-KH-7NX" userLabel="Date Label">
+                                            <rect key="frame" x="8" y="12" width="134" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="QyV-KH-7NX" id="x4b-Nw-7Qc"/>
+                                    <outlet property="recievedOrGivenLabel" destination="klf-dE-4C3" id="Ct0-GT-3Lm"/>
+                                    <outlet property="totalClothesLabel" destination="3x8-aY-q0j" id="RRM-vk-RjF"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Details Of Given Clothes Bundle" id="9Q7-3I-PtL"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CKg-1E-54x" id="0qH-Tg-Pm7"/>
+                            <outlet property="delegate" destination="CKg-1E-54x" id="f3r-8H-PSJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Clothes Given" id="5vb-1D-0RO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="AiV-nk-hLP">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="Give New Clothes Bundle" id="1kL-rt-n7x"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXQ-D3-EKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="-43"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9Q7-3I-PtL"/>
+    </inferredMetricsTieBreakers>
+</document>

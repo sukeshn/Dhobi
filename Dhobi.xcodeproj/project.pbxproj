@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95754B841EB4B9F4004F25DB /* ClothesBundleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95754B831EB4B9F4004F25DB /* ClothesBundleTableViewCell.swift */; };
+		95754B861EB4C660004F25DB /* ClothesBundleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95754B851EB4C660004F25DB /* ClothesBundleTableViewController.swift */; };
+		95754B881EB4C883004F25DB /* ClothesBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95754B871EB4C883004F25DB /* ClothesBundle.swift */; };
+		957F780E1ECB3330007BF688 /* Dhobi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 957F780C1ECB3330007BF688 /* Dhobi.xcdatamodeld */; };
+		95DA41011DF2AC2900028986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA41001DF2AC2900028986 /* AppDelegate.swift */; };
+		95DA41031DF2AC2900028986 /* ClothesBundleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA41021DF2AC2900028986 /* ClothesBundleViewController.swift */; };
+		95DA41061DF2AC2900028986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DA41041DF2AC2900028986 /* Main.storyboard */; };
+		95DA410B1DF2AC2900028986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DA410A1DF2AC2900028986 /* Assets.xcassets */; };
+		95DA410E1DF2AC2900028986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DA410C1DF2AC2900028986 /* LaunchScreen.storyboard */; };
+		95DA41191DF2AC2900028986 /* DhobiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA41181DF2AC2900028986 /* DhobiTests.swift */; };
+		95DA41241DF2AC2900028986 /* DhobiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA41231DF2AC2900028986 /* DhobiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95DA41151DF2AC2900028986 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95DA40F51DF2AC2900028986 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95DA40FC1DF2AC2900028986;
+			remoteInfo = Dhobi;
+		};
+		95DA41201DF2AC2900028986 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95DA40F51DF2AC2900028986 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95DA40FC1DF2AC2900028986;
+			remoteInfo = Dhobi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95754B831EB4B9F4004F25DB /* ClothesBundleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesBundleTableViewCell.swift; sourceTree = "<group>"; };
+		95754B851EB4C660004F25DB /* ClothesBundleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesBundleTableViewController.swift; sourceTree = "<group>"; };
+		95754B871EB4C883004F25DB /* ClothesBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesBundle.swift; sourceTree = "<group>"; };
+		957F780D1ECB3330007BF688 /* Dhobi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dhobi.xcdatamodel; sourceTree = "<group>"; };
+		95DA40FD1DF2AC2900028986 /* Dhobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dhobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DA41001DF2AC2900028986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95DA41021DF2AC2900028986 /* ClothesBundleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesBundleViewController.swift; sourceTree = "<group>"; };
+		95DA41051DF2AC2900028986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95DA410A1DF2AC2900028986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95DA410D1DF2AC2900028986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95DA410F1DF2AC2900028986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DA41141DF2AC2900028986 /* DhobiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DhobiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DA41181DF2AC2900028986 /* DhobiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhobiTests.swift; sourceTree = "<group>"; };
+		95DA411A1DF2AC2900028986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DA411F1DF2AC2900028986 /* DhobiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DhobiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DA41231DF2AC2900028986 /* DhobiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhobiUITests.swift; sourceTree = "<group>"; };
+		95DA41251DF2AC2900028986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95DA40FA1DF2AC2900028986 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DA41111DF2AC2900028986 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DA411C1DF2AC2900028986 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		950CFFC11EC75D9600DD68DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95DA410F1DF2AC2900028986 /* Info.plist */,
+				95DA410C1DF2AC2900028986 /* LaunchScreen.storyboard */,
+				95DA410A1DF2AC2900028986 /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		950CFFCA1EC7629500DD68DD /* Core Data Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Core Data Files";
+			sourceTree = "<group>";
+		};
+		95DA40F41DF2AC2900028986 = {
+			isa = PBXGroup;
+			children = (
+				95DA40FF1DF2AC2900028986 /* Dhobi */,
+				95DA41171DF2AC2900028986 /* DhobiTests */,
+				95DA41221DF2AC2900028986 /* DhobiUITests */,
+				95DA40FE1DF2AC2900028986 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95DA40FE1DF2AC2900028986 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95DA40FD1DF2AC2900028986 /* Dhobi.app */,
+				95DA41141DF2AC2900028986 /* DhobiTests.xctest */,
+				95DA411F1DF2AC2900028986 /* DhobiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95DA40FF1DF2AC2900028986 /* Dhobi */ = {
+			isa = PBXGroup;
+			children = (
+				950CFFCA1EC7629500DD68DD /* Core Data Files */,
+				950CFFC11EC75D9600DD68DD /* Supporting Files */,
+				95DA41001DF2AC2900028986 /* AppDelegate.swift */,
+				95DA41021DF2AC2900028986 /* ClothesBundleViewController.swift */,
+				95DA41041DF2AC2900028986 /* Main.storyboard */,
+				95754B831EB4B9F4004F25DB /* ClothesBundleTableViewCell.swift */,
+				95754B851EB4C660004F25DB /* ClothesBundleTableViewController.swift */,
+				95754B871EB4C883004F25DB /* ClothesBundle.swift */,
+				957F780C1ECB3330007BF688 /* Dhobi.xcdatamodeld */,
+			);
+			path = Dhobi;
+			sourceTree = "<group>";
+		};
+		95DA41171DF2AC2900028986 /* DhobiTests */ = {
+			isa = PBXGroup;
+			children = (
+				95DA41181DF2AC2900028986 /* DhobiTests.swift */,
+				95DA411A1DF2AC2900028986 /* Info.plist */,
+			);
+			path = DhobiTests;
+			sourceTree = "<group>";
+		};
+		95DA41221DF2AC2900028986 /* DhobiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				95DA41231DF2AC2900028986 /* DhobiUITests.swift */,
+				95DA41251DF2AC2900028986 /* Info.plist */,
+			);
+			path = DhobiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95DA40FC1DF2AC2900028986 /* Dhobi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DA41281DF2AC2900028986 /* Build configuration list for PBXNativeTarget "Dhobi" */;
+			buildPhases = (
+				95DA40F91DF2AC2900028986 /* Sources */,
+				95DA40FA1DF2AC2900028986 /* Frameworks */,
+				95DA40FB1DF2AC2900028986 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dhobi;
+			productName = Dhobi;
+			productReference = 95DA40FD1DF2AC2900028986 /* Dhobi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95DA41131DF2AC2900028986 /* DhobiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DA412B1DF2AC2900028986 /* Build configuration list for PBXNativeTarget "DhobiTests" */;
+			buildPhases = (
+				95DA41101DF2AC2900028986 /* Sources */,
+				95DA41111DF2AC2900028986 /* Frameworks */,
+				95DA41121DF2AC2900028986 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95DA41161DF2AC2900028986 /* PBXTargetDependency */,
+			);
+			name = DhobiTests;
+			productName = DhobiTests;
+			productReference = 95DA41141DF2AC2900028986 /* DhobiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		95DA411E1DF2AC2900028986 /* DhobiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DA412E1DF2AC2900028986 /* Build configuration list for PBXNativeTarget "DhobiUITests" */;
+			buildPhases = (
+				95DA411B1DF2AC2900028986 /* Sources */,
+				95DA411C1DF2AC2900028986 /* Frameworks */,
+				95DA411D1DF2AC2900028986 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95DA41211DF2AC2900028986 /* PBXTargetDependency */,
+			);
+			name = DhobiUITests;
+			productName = DhobiUITests;
+			productReference = 95DA411F1DF2AC2900028986 /* DhobiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95DA40F51DF2AC2900028986 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Sukesh Nemane";
+				TargetAttributes = {
+					95DA40FC1DF2AC2900028986 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = ANY3G324J4;
+						ProvisioningStyle = Automatic;
+					};
+					95DA41131DF2AC2900028986 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 95DA40FC1DF2AC2900028986;
+					};
+					95DA411E1DF2AC2900028986 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 95DA40FC1DF2AC2900028986;
+					};
+				};
+			};
+			buildConfigurationList = 95DA40F81DF2AC2900028986 /* Build configuration list for PBXProject "Dhobi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95DA40F41DF2AC2900028986;
+			productRefGroup = 95DA40FE1DF2AC2900028986 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95DA40FC1DF2AC2900028986 /* Dhobi */,
+				95DA41131DF2AC2900028986 /* DhobiTests */,
+				95DA411E1DF2AC2900028986 /* DhobiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95DA40FB1DF2AC2900028986 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DA410E1DF2AC2900028986 /* LaunchScreen.storyboard in Resources */,
+				95DA410B1DF2AC2900028986 /* Assets.xcassets in Resources */,
+				95DA41061DF2AC2900028986 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DA41121DF2AC2900028986 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DA411D1DF2AC2900028986 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95DA40F91DF2AC2900028986 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95754B881EB4C883004F25DB /* ClothesBundle.swift in Sources */,
+				95754B841EB4B9F4004F25DB /* ClothesBundleTableViewCell.swift in Sources */,
+				95DA41031DF2AC2900028986 /* ClothesBundleViewController.swift in Sources */,
+				95DA41011DF2AC2900028986 /* AppDelegate.swift in Sources */,
+				95754B861EB4C660004F25DB /* ClothesBundleTableViewController.swift in Sources */,
+				957F780E1ECB3330007BF688 /* Dhobi.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DA41101DF2AC2900028986 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DA41191DF2AC2900028986 /* DhobiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DA411B1DF2AC2900028986 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DA41241DF2AC2900028986 /* DhobiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95DA41161DF2AC2900028986 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95DA40FC1DF2AC2900028986 /* Dhobi */;
+			targetProxy = 95DA41151DF2AC2900028986 /* PBXContainerItemProxy */;
+		};
+		95DA41211DF2AC2900028986 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95DA40FC1DF2AC2900028986 /* Dhobi */;
+			targetProxy = 95DA41201DF2AC2900028986 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95DA41041DF2AC2900028986 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95DA41051DF2AC2900028986 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95DA410C1DF2AC2900028986 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95DA410D1DF2AC2900028986 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95DA41261DF2AC2900028986 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95DA41271DF2AC2900028986 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95DA41291DF2AC2900028986 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ANY3G324J4;
+				INFOPLIST_FILE = Dhobi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sukeshnemane.apps.Dhobi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		95DA412A1DF2AC2900028986 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ANY3G324J4;
+				INFOPLIST_FILE = Dhobi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sukeshnemane.apps.Dhobi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		95DA412C1DF2AC2900028986 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DhobiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sukeshnemane.apps.DhobiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dhobi.app/Dhobi";
+			};
+			name = Debug;
+		};
+		95DA412D1DF2AC2900028986 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DhobiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sukeshnemane.apps.DhobiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dhobi.app/Dhobi";
+			};
+			name = Release;
+		};
+		95DA412F1DF2AC2900028986 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DhobiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sukeshnemane.apps.DhobiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Dhobi;
+			};
+			name = Debug;
+		};
+		95DA41301DF2AC2900028986 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DhobiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sukeshnemane.apps.DhobiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Dhobi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95DA40F81DF2AC2900028986 /* Build configuration list for PBXProject "Dhobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DA41261DF2AC2900028986 /* Debug */,
+				95DA41271DF2AC2900028986 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95DA41281DF2AC2900028986 /* Build configuration list for PBXNativeTarget "Dhobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DA41291DF2AC2900028986 /* Debug */,
+				95DA412A1DF2AC2900028986 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95DA412B1DF2AC2900028986 /* Build configuration list for PBXNativeTarget "DhobiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DA412C1DF2AC2900028986 /* Debug */,
+				95DA412D1DF2AC2900028986 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95DA412E1DF2AC2900028986 /* Build configuration list for PBXNativeTarget "DhobiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DA412F1DF2AC2900028986 /* Debug */,
+				95DA41301DF2AC2900028986 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		957F780C1ECB3330007BF688 /* Dhobi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				957F780D1ECB3330007BF688 /* Dhobi.xcdatamodel */,
+			);
+			currentVersion = 957F780D1ECB3330007BF688 /* Dhobi.xcdatamodel */;
+			path = Dhobi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 95DA40F51DF2AC2900028986 /* Project object */;
+}
