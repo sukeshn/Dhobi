@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dhobi/ClothesBundleTableViewController.swift"
-            timestampString = "517665344.717675"
+            timestampString = "524664524.249325"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "updateUI()"
             landmarkType = "7">
          </BreakpointContent>

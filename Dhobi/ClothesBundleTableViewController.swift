@@ -18,6 +18,7 @@ class ClothesBundleTableViewController: UITableViewController {
     var fetchedResultsController: NSFetchedResultsController<ClothesBundle>?
     
     
+    
     //MARK Private Methods
     private func updateUI()
     {
@@ -25,7 +26,7 @@ class ClothesBundleTableViewController: UITableViewController {
             let request: NSFetchRequest<ClothesBundle> = ClothesBundle.fetchRequest()
             request.sortDescriptors = [NSSortDescriptor(key: "dateGiven", ascending: true, selector: nil)]
             
-            fetchedResultsController = NSFetchedResultsController<ClothesBundle>(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+            fetchedResultsController = NSFetchedResultsController<ClothesBundle>(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: "monthGiven", cacheName: nil)
             //fetchedResultsController?.delegate = self
             try? fetchedResultsController?.performFetch()
             tableView.reloadData()
@@ -97,6 +98,16 @@ class ClothesBundleTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if let sections = fetchedResultsController?.sections, sections.count > 0
+        {
+            return sections[section].name
+        }
+        else
+        {
+            return "None"
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="ClothesBundle" representedClassName=".ClothesBundle" syncable="YES" codeGenerationType="category">
         <attribute name="blouses" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="dateGiven" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -17,7 +17,13 @@
         <attribute name="sukeshsPants" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="sukeshsShirts" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
+    <entity name="PaymentHistory" representedClassName=".PaymentHistory" syncable="YES" codeGenerationType="class">
+        <attribute name="amountPaid" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="datePaid" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="paidForMonth" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="ClothesBundle" positionX="-63" positionY="-18" width="128" height="270"/>
+        <element name="PaymentHistory" positionX="-54" positionY="108" width="128" height="90"/>
     </elements>
 </model>
