@@ -14,6 +14,10 @@ import CoreData
 class ClothesBundle: NSManagedObject
 {
     
+    //Call function to return the list of months for which the payment is not done
+    
+    
+    
     //Computed property of month
     
     var monthGiven : String{
@@ -30,6 +34,7 @@ class ClothesBundle: NSManagedObject
         return Int(kaneeshasTops + kaneeshasBottoms + kaneeshasFrocks + kaneeshasUniforms + nehalsShirts + nehalsPants + sukeshsShirts + sukeshsPants + punjabis + sarees + blouses + others)
 
     }
+    
     
 }
 

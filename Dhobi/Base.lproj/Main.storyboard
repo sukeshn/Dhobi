@@ -7,10 +7,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Clothes Bundle View Controller-->
+        <!--Bundle-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ClothesBundleViewController" customModule="Dhobi" customModuleProvider="target" sceneMemberID="viewController">
@@ -305,7 +306,7 @@
                             <constraint firstItem="gHN-pJ-P1u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="w8p-oB-HQi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="R6Y-hj-UXD"/>
+                    <navigationItem key="navigationItem" title="Bundle" id="R6Y-hj-UXD"/>
                     <connections>
                         <outlet property="BlouseStepper" destination="T7z-Rm-VKw" id="l65-93-JdE"/>
                         <outlet property="BlousesCounter" destination="0J9-lk-eLR" id="MeY-mh-W0O"/>
@@ -339,7 +340,59 @@
             </objects>
             <point key="canvasLocation" x="1534" y="-43"/>
         </scene>
-        <!--Payment History Table View Controller-->
+        <!--Make Payment-->
+        <scene sceneID="0id-lE-7Gz">
+            <objects>
+                <viewController id="ZsR-j1-TZm" customClass="MakePaymentViewController" customModule="Dhobi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yOM-gs-ROq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uz7-6K-T6g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EtR-6n-27C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Byg-Q4-sMz">
+                                <rect key="frame" x="0.0" y="59" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAE-S0-5Kf">
+                                <rect key="frame" x="64" y="318" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Calculate!"/>
+                                <connections>
+                                    <action selector="calculateAmount:" destination="ZsR-j1-TZm" eventType="touchUpInside" id="hD5-6z-jp1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OaI-4s-f89">
+                                <rect key="frame" x="153" y="318" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a50-9h-cjG">
+                                <rect key="frame" x="258" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pay"/>
+                                <connections>
+                                    <action selector="makePayment:" destination="ZsR-j1-TZm" eventType="touchUpInside" id="GOz-I4-dNd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Make Payment" id="ghS-kB-GKn"/>
+                    <connections>
+                        <outlet property="amountToPay" destination="OaI-4s-f89" id="FN5-DW-J4T"/>
+                        <outlet property="monthPicker" destination="Byg-Q4-sMz" id="y4P-82-Zqv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gl2-br-So2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568.79999999999995" y="894.60269865067471"/>
+        </scene>
+        <!--Payment History-->
         <scene sceneID="ibm-dq-5wm">
             <objects>
                 <tableViewController id="lo6-Zj-9cY" customClass="PaymentHistoryTableViewController" customModule="Dhobi" customModuleProvider="target" sceneMemberID="viewController">
@@ -348,7 +401,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zmy-DL-Dy4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaymentRecordTableViewCell" id="Zmy-DL-Dy4" customClass="PaymentRecordTableViewCell" customModule="Dhobi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zmy-DL-Dy4" id="hQL-JE-OCR">
@@ -378,6 +431,11 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="amountLabel" destination="3gR-Gg-BMe" id="WFV-ek-OZ6"/>
+                                    <outlet property="datePaidLabel" destination="zeC-xK-FZa" id="iT2-3J-HHI"/>
+                                    <outlet property="monthYearLabel" destination="ob0-8R-ot5" id="Vqa-9b-pO1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -385,10 +443,13 @@
                             <outlet property="delegate" destination="lo6-Zj-9cY" id="pDQ-6k-iwv"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Payment History" id="jsG-Zb-zRg"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2pA-lQ-rWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1533.5999999999999" y="681.40929535232385"/>
+            <point key="canvasLocation" x="1520" y="894"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="loa-5k-Skb">
@@ -461,16 +522,23 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Clothes Given" id="5vb-1D-0RO">
-                        <barButtonItem key="leftBarButtonItem" title="Pay" id="yU8-87-BZy">
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="yU8-87-BZy">
                             <connections>
-                                <segue destination="lo6-Zj-9cY" kind="show" id="z2h-bA-DgW"/>
+                                <segue destination="lo6-Zj-9cY" kind="show" identifier="Show payment history" id="z2h-bA-DgW"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="AiV-nk-hLP">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="Give New Clothes Bundle" id="1kL-rt-n7x"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="action" id="AiV-nk-hLP">
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Give New Clothes Bundle" id="1kL-rt-n7x"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="compose" id="0Hb-DD-32v">
+                                <connections>
+                                    <segue destination="ZsR-j1-TZm" kind="show" identifier="Make payment" id="STi-VO-jpQ"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXQ-D3-EKP" userLabel="First Responder" sceneMemberID="firstResponder"/>

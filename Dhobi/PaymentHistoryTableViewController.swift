@@ -30,6 +30,11 @@ class PaymentHistoryTableViewController: UITableViewController {
         }
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateUI()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,23 +55,34 @@ class PaymentHistoryTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return fetchedResultsController?.sections?.count ?? 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+
         return 0
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        //Table view cells are reused and should be dequeued using a cell identifier
+        let cellIdentifier = "PaymentRecordTableViewCell"
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PaymentRecordTableViewCell else {
+            fatalError("The dequeued cell is not an instance of PaymentRecordTableViewCell.")
+        }
 
         // Configure the cell...
-
+        let paymentRecord = fetchedResultsController?.object(at: indexPath)
+        
+        cell.monthYearLabel.text = paymentRecord?.paidForMonth
+        cell.amountLabel.text = paymentRecord?.amountPaid.description
+        cell.datePaidLabel.text = paymentRecord?.datePaid?.description
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

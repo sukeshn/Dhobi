@@ -19,6 +19,8 @@
 		95DA410E1DF2AC2900028986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DA410C1DF2AC2900028986 /* LaunchScreen.storyboard */; };
 		95DA41191DF2AC2900028986 /* DhobiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA41181DF2AC2900028986 /* DhobiTests.swift */; };
 		95DA41241DF2AC2900028986 /* DhobiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA41231DF2AC2900028986 /* DhobiUITests.swift */; };
+		95F5737B1F4AF2F800B9536C /* PaymentRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5737A1F4AF2F800B9536C /* PaymentRecordTableViewCell.swift */; };
+		95F5737D1F4B0AEB00B9536C /* MakePaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5737C1F4B0AEB00B9536C /* MakePaymentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		95DA411F1DF2AC2900028986 /* DhobiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DhobiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DA41231DF2AC2900028986 /* DhobiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhobiUITests.swift; sourceTree = "<group>"; };
 		95DA41251DF2AC2900028986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95F5737A1F4AF2F800B9536C /* PaymentRecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentRecordTableViewCell.swift; sourceTree = "<group>"; };
+		95F5737C1F4B0AEB00B9536C /* MakePaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakePaymentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,11 +133,13 @@
 				95DA41001DF2AC2900028986 /* AppDelegate.swift */,
 				95DA41021DF2AC2900028986 /* ClothesBundleViewController.swift */,
 				95DA41041DF2AC2900028986 /* Main.storyboard */,
+				95F5737C1F4B0AEB00B9536C /* MakePaymentViewController.swift */,
 				955C32331F45D7350026DC40 /* PaymentHistoryTableViewController.swift */,
 				95754B831EB4B9F4004F25DB /* ClothesBundleTableViewCell.swift */,
 				95754B851EB4C660004F25DB /* ClothesBundleTableViewController.swift */,
 				95754B871EB4C883004F25DB /* ClothesBundle.swift */,
 				957F780C1ECB3330007BF688 /* Dhobi.xcdatamodeld */,
+				95F5737A1F4AF2F800B9536C /* PaymentRecordTableViewCell.swift */,
 			);
 			path = Dhobi;
 			sourceTree = "<group>";
@@ -296,6 +302,8 @@
 				95DA41031DF2AC2900028986 /* ClothesBundleViewController.swift in Sources */,
 				95DA41011DF2AC2900028986 /* AppDelegate.swift in Sources */,
 				955C32341F45D7350026DC40 /* PaymentHistoryTableViewController.swift in Sources */,
+				95F5737D1F4B0AEB00B9536C /* MakePaymentViewController.swift in Sources */,
+				95F5737B1F4AF2F800B9536C /* PaymentRecordTableViewCell.swift in Sources */,
 				95754B861EB4C660004F25DB /* ClothesBundleTableViewController.swift in Sources */,
 				957F780E1ECB3330007BF688 /* Dhobi.xcdatamodeld in Sources */,
 			);
