@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class MakePaymentViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -14,6 +15,7 @@ class MakePaymentViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var amountToPay: UITextField!
 
     @IBAction func calculateAmount(_ sender: UIButton) {
+        amountToPay.text = calculateAmount(ForMonth: pickerData[monthPicker.selectedRow(inComponent: 0)]).description
     }
     @IBAction func makePayment(_ sender: UIButton) {
     }
@@ -75,6 +77,27 @@ class MakePaymentViewController: UIViewController, UIPickerViewDelegate, UIPicke
         // Pass the selected object to the new view controller.
     }
     */
+    
+    private func calculateAmount (ForMonth : String) -> Double {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.setLocalizedDateFormatFromTemplate("MMMM yyyy")
+        
+        //Get the first day of the month passed
+        let dateFrom = dateFormatter.date(from: ForMonth)
+        let dateTo = dateFrom?.getNextMonth()
+        //Identify the total clothes for the whole month and then apply the rate to the clothes.
+        let container: NSPersistentContainer? = AppDelegate.persistentContainer
+        var amount = 0.0
+        if let context = container?.viewContext {
+            let request: NSFetchRequest<ClothesBundle> = ClothesBundle.fetchRequest()
+            request.predicate = NSPredicate(format: "(%@ <= dateGiven) AND (dateGiven < %@)", argumentArray: [dateFrom as Any, dateTo as Any])
+            
+            amount = Double(try! context.count(for: request))
+        }
+        
+        return amount
+    }
     
    
 }
